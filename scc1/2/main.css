@@ -5,6 +5,11 @@ box-sizing: border-box;
 font-family: Source Sans Pro;
 }
 
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(./font/SourceSansPro-Semibold.otf);
+}
+
 body {
 height: 640px;
 
