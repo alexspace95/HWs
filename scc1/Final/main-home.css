@@ -1,0 +1,1056 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat-Medium.otf);
+}
+
+    header .account {
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .account .currency{
+        color: #6c6c6c;
+    }
+
+    header .account .currency select {
+        outline: none;
+        background-color: #333333;
+        border: none;
+        color: #6d6d6d;
+    }
+
+    header .account .login {
+        display: flex;
+        justify-content: flex-end;        
+    }
+
+    header .account .login a,label {
+        padding: 13.5px 17.5px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #6d6d6d;
+    }
+
+@media screen and (min-width:500px) {
+    header .account .login .cart {
+        margin-left: 60px;
+    }  
+}
+
+header .account .login label{
+    background-color: #00c8c8;
+    color: #ffffff;
+    margin-left: 2.5px;
+}
+
+header .account .login label :before {
+    content: '';
+    padding: 10px;
+    margin-right: 20px;
+    background-position: center;
+    background-image: url(./0.common/cart1.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+header .account .login label :after {
+    content: '⌄';
+    margin-left: 5px;
+    position: relative;
+    bottom: 5px;  
+}
+
+
+
+
+
+    main {
+        width: 100%;
+        background-color: #f8f8f8;
+        background-image: url(./1.home/photo0.png);
+        background-position-x: 50%;
+        background-size: 190%;
+        background-repeat: no-repeat;
+        height: 920px;
+        color: #222222;
+    }
+
+    @media screen and (min-width:500px) {
+        main {
+            background-size: 965px;
+            background-position-x: 10%;
+        }
+    }
+
+    main .head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;     
+    }
+
+    main .head p{
+text-transform: uppercase;
+margin: 10px 0 0 30px ;
+    }
+
+    main .head .label{
+        color: #222222;
+    }
+
+    @media screen and (min-width:500px) {
+    main .head .label{
+        width: 450px;
+        color: #222222;
+        font-size: 24px;
+    }
+
+
+}
+
+    main .head span {
+        font-weight: bold;
+    }
+
+    main .head nav {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+
+    main nav ul {
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    main .h {
+        text-transform: uppercase;
+    }
+
+    main nav ul li {
+        display: block;
+        position: relative;
+        right: 0;
+    }
+
+    main nav ul li a {
+        display: block;
+        padding: 20px 5px;
+        color: #3c3c3c;
+        text-decoration: none;
+    }
+
+    main nav ul li section a{
+        color: #9c9c9c;
+    }
+
+    main nav ul li section a.os{
+        color: #575153;
+    }
+
+    main nav ul li a:hover {
+        color: #00c8c8;
+    }
+
+    main nav input {
+        margin: 10px 100px 10px 100px;
+        outline: none;
+        background-color: transparent;
+        padding: 6.5px 10px;
+        font-size: 13px;
+        border: 1px solid #e7e7e7;
+        color: #989898;
+        background-image: url(./0.common/search.png);
+            background-repeat: no-repeat;
+            background-position: 95%;
+            }
+
+    main nav ul ol {
+        background-color: white ;
+        display: none;
+        position: absolute; 
+        text-transform: capitalize;
+        padding: 0;
+    }
+
+    main nav ul ol section {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    main nav ul ol section div {
+        margin:20px;
+        padding-right: 40px;
+    }
+
+    main nav ul ol section div a{
+padding: 5px;
+    }
+
+    main nav ul ol .pic {
+      background-color: #333333;
+      margin: 10px; 
+      padding: 30px 0;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    main nav ul ol li {
+        white-space: nowrap;
+    }
+
+    main nav ul li:hover ol {
+        display: block;
+    }
+
+    main nav ul ol li div {
+        padding: 0;
+        margin: 0;
+    }
+
+    main nav ul ol li .os {
+        text-transform: uppercase;
+        padding: 20px 5px;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    @media screen and (min-width:500px) {
+
+        main .b-collection {
+    display: flex;
+    justify-content: flex-end;       
+    color: black;
+    position: relative;
+    top: 740px;
+    right: 15%;
+    }
+
+    main .b-collection .button{
+        padding: 10px 75px;
+        user-select: none;
+        background-color: transparent;
+        border: 2px solid #737373;
+    }
+
+
+    main .b-collection .button span {
+        text-transform: uppercase;
+    }
+
+    main .b-collection .button input {
+        display: none;
+    }
+}
+
+main .b-collection .button:active {
+    opacity: 0.75;
+}
+
+
+main .title h1.ave{
+    user-select: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 30px;
+        color: #575153;
+    }
+   
+
+    @media screen and (min-width:1200px){
+        main .title h1.ave{
+            font-size: 450px;
+        }
+    }
+
+    @media screen and (max-width:1200px){
+        main .title h1.ave{
+            font-size: 280px;
+        }
+    }
+
+    @media screen and (max-width:800px){
+        main .title h1.ave{
+            font-size: 200px;
+        }
+    }
+
+
+
+    aside {
+        margin: 50px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;      
+    }
+
+    aside nav div{
+        display: flex;
+        justify-content: start;
+        padding-top: 50px;
+    }
+
+aside nav a{
+    color:gray;
+    text-transform: uppercase;
+    padding: 0 20px 20px 0; 
+    font-size: 13px;            
+    }
+
+    aside nav a:hover {
+        color: #00c8c8;  
+    }
+
+    aside .mod {
+        user-select: none;
+        color: gray;
+        padding: 30px 1px;
+        background-color: #ffffff;
+    }
+
+    
+
+    @media screen and (min-width:800px){
+        aside .mod{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+    }
+
+    
+
+
+    
+    aside .mod .one:hover,.two:hover,.three:hover,
+    .four:hover,.five:hover,.six:hover{
+        box-shadow: 0px 0px 10px gray;
+        border: 1px solid gray;
+        padding: 4px 0px;
+    }
+
+    aside .mod .one,.two,.three,.four,.five,.six {
+        padding: 5px 1px;
+    }
+
+    aside .mod figcaption{
+        opacity:0;
+        position: relative;
+        top: 475px;
+        border: 1px solid gray;
+        margin: 0px -1px;
+        background-color: white;
+    }
+    @media screen and (min-width:500px){
+    aside .mod .three figcaption,
+    aside .mod .four figcaption {
+        top: 675px;
+    }
+}
+
+    aside .mod figure span {
+        padding: 10px;
+    }
+
+    aside .mod .old {
+        text-decoration: line-through;
+    }
+
+    aside .mod .one:hover figcaption,
+    .two:hover figcaption,
+    .three:hover figcaption,
+    .four:hover figcaption,
+    .five:hover figcaption,
+    .six:hover figcaption{
+        opacity:1;
+        text-align: center;
+        box-shadow: 0px 5px 10px gray;
+    }
+
+    aside .mod figcaption h5 {
+        font-weight: normal;
+        padding: 10px 0px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    aside .mod figcaption .boxes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    aside .mod figcaption .boxes input{
+        display: none;
+    }
+
+    aside .mod figcaption .boxes .boxes-one,
+    aside .mod figcaption .boxes .box-like,
+    aside .mod figcaption .boxes .box-sizes
+    {
+        padding: 1px 11px;
+        border-radius: 50px;
+        border: 3px solid #727272;
+        background-color: #727272;
+        margin: 0px 5px;
+    }
+
+    aside .mod figcaption .boxes .boxes-one{
+        background-image: url(./1.home/cart.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+    }
+
+    aside .mod figcaption .boxes .boxes-one:hover,
+    aside .mod figcaption .boxes .box-like:hover,
+    aside .mod figcaption .boxes .box-sizes:hover
+    {
+        border: 3px solid #00c8c8;
+        background-color: #00c8c8;
+    }
+
+    aside .mod figcaption .boxes .box-like{
+        background-image: url(./1.home/like.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 70%;
+    }
+
+    aside .mod figcaption .boxes .box-sizes{
+        background-image: url(./1.home/arrows1.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 70%;
+    }
+
+
+    @media screen and (min-width:500px){
+    aside .mod .lefts,.rights{
+        width: 49%;
+    }
+}
+
+    @media screen and (min-width:500px){
+    aside .mod .lefts .left-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    }
+
+    @media screen and (min-width:500px){
+    aside .mod .lefts .left-top .one,.two{
+        width: 48%;
+    }
+}
+
+    aside .mod .lefts .left-top .one,.two{
+        margin-bottom: 10px;
+    }
+
+    aside .mod .lefts .three{
+        margin: 20px 0 ;
+    }
+
+    aside .mod .rights .four{
+        margin-bottom: 40px ;
+    }
+
+    @media screen and (min-width:500px){
+    aside .mod .rights .right-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+aside .mod .rights .right-bottom .five, .six {
+    width: 48%;
+}
+}
+
+
+    aside .mod .one{
+        background-image: url(./1.home/photoa1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f8f8f8;
+        height: 500px; 
+    }
+    aside .mod .two{
+        background-image: url(./1.home/photoa2.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f8f8f8;
+        height: 500px; 
+    }
+    aside .mod .three{
+        background-image: url(./1.home/photoa3.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f8f8f8;
+        height: 700px; 
+    }
+    aside .mod .four{
+        background-image: url(./1.home/photoa4.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f8f8f8;
+        height: 700px;
+    }
+    aside .mod .five{
+        background-image: url(./1.home/photoa5.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px; 
+        background-color: #f8f8f8;
+    }
+    aside .mod .six{
+        background-image: url(./1.home/photoa6.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px; 
+        background-color: #f8f8f8;
+    }
+
+
+
+
+
+
+
+    section.lookbooks {
+        margin: 50px 0;
+    }
+
+@media screen and (min-width:500px) {
+    section.lookbooks .looks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+    section.lookbooks .looks .div {
+        width: 31%;
+        background-color: #f8f8f8;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: end;
+}
+
+section.lookbooks .looks .pic-man,
+section.lookbooks .looks .pic-woman,
+section.lookbooks .looks .pic-you{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+@media screen and (min-width:500px) {
+section.lookbooks .looks .pic-man,
+section.lookbooks .looks .pic-woman,
+section.lookbooks .looks .pic-you{
+    margin-left: 5%;
+}
+}
+
+    section.lookbooks .looks .pic-man{
+    background-image: url(./1.home/lmen.png);
+    }
+
+    section.lookbooks .looks .pic-woman {
+        background-image: url(./1.home/lwomen.png);
+    }
+
+    section.lookbooks .looks .pic-you {
+        background-image: url(./1.home/lyour.png);
+    }
+
+    section.lookbooks .looks .text{
+        width: 55%;
+        margin: 20px;
+    }
+
+    section.lookbooks .looks h2 {
+        text-transform: uppercase;
+    }
+
+    section.lookbooks .looks h2 p {
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+
+    section.lookbooks .view-button label input{
+        display: none;
+    }
+
+    section.lookbooks .view-button label p{
+        background-color: white;
+        border: 1px solid black;
+        margin-left:40px;
+        text-align: center;
+        padding:10px 0px;
+        text-transform: uppercase;
+        user-select: none;
+    }
+
+    section.lookbooks .view-button label p:hover{
+        background-color: #00c8c8;
+        border: 1px solid #00c8c8;
+        color: white;
+    }
+
+    section.lookbooks .view-button label p:active{
+        background-color: #00c8c8;
+        border: 1px solid white;
+        color: white;
+    }
+
+
+
+
+
+
+
+    footer {
+        padding: 30px 10px;
+        background-color: #f8f8f8;
+        user-select: none;
+    }
+
+    @media screen and (min-width:500px){
+        footer{
+            padding: 30px 11%;
+        }
+
+    footer .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer .top div {
+        text-align: start;
+        width: 22%;
+    }
+
+}
+
+    footer .top div h6 {
+        text-transform: uppercase;
+        padding: 35px 0;
+    }
+
+    footer .top a {
+        text-transform: none;
+        color: #7d7d7d;
+        display: block;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+
+    footer .top a:hover{
+        opacity: 0.8;
+    }
+
+    footer .top .contact p{
+        padding-bottom: 8px;
+        color: #7d7d7d;
+    }
+
+
+
+    @media screen and (min-width:500px){
+        footer .bottom {
+            margin-top:20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        } 
+
+        footer .bottom .left {
+            width: 49%;
+        }
+
+        footer .bottom .right{
+            width: 49%;
+        }
+
+    }
+
+
+    footer .bottom {
+        margin-top:20px;
+    }
+
+    footer .bottom .left .field{
+        background-color: rgb(99, 96, 96);
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer .bottom .left .field{
+        height: 200px;
+        padding: 10% 0;
+        text-align: center;
+    }
+
+    footer .bottom .left .field input{
+        display: none;
+    }
+
+    footer .bottom .left .field h2{
+        text-transform: uppercase;
+        color: white;
+        font-size: 36px;
+        padding: 2px;
+    }
+
+    footer .bottom .left .field .light{
+        font-weight: normal;
+    }
+
+    footer .bottom .right{
+        background-color: #00c8c8;
+        margin-top: 18px;
+        height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    footer .bottom .right .f a{
+        background-image: url(./0.common/Facebook.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding:16px;
+    }
+    
+    footer .bottom .right .t a{
+        background-image: url(./0.common/Twitter.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+        padding:16px;
+    }
+    
+    footer .bottom .right .i a{
+        background-image: url(./0.common/insta.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 120%;
+        padding:12px 16px;
+    }
+    
+    footer .bottom .right .p a{
+        background-image: url(./0.common/Pinterest.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 90%;
+        padding: 10px 16px;
+    }
+
+    footer .bottom .right label{
+        padding: 0;
+    }
+
+    footer .bottom .right div {
+        padding: 0 25px;
+    }
+
+
+
+
+
+
+    @media screen and (max-width:800px)  {
+        main nav input {
+            margin: 10px;
+        }
+
+        aside .mod .lefts, .rights {
+            width: 100%;
+        }
+
+
+        aside .mod .lefts .left-top .one{
+            margin-bottom: 20px;
+        }
+
+        aside .mod .rights .four{
+            margin-bottom: 20px ;
+        }
+
+        aside .mod .rights .right-bottom .five{
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+
+        aside .mod .one,
+        aside .mod .two,
+        aside .mod .three,
+        aside .mod .four,
+        aside .mod .five,
+        aside .mod .six {
+            background-position: top;
+            background-size: 100%;
+        }
+
+
+        aside .mod figcaption{
+            position: relative;
+            top: 320px;
+        }
+    }
+
+
+
+/* ТЕЛ. */
+@media screen and (max-width:500px)  {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    header .account {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #6d6d6d;
+    } 
+
+    header .account .currency select {
+        outline: none;
+        background-color: transparent;
+        color: #6d6d6d;
+        border: none;
+    }
+
+    header .account .login {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .account .login a,label {
+        padding: 13.5px 2px;
+        text-decoration: none;
+        color: #6d6d6d;
+        cursor: pointer;
+    }
+
+    header .account .login label{
+        background-color: #00c8c8;
+    }
+
+    header .account .login label :before {
+        margin-right: 10px;
+    }
+            
+            main {
+                height: 765px;
+            }
+            main .head p{
+                text-transform: uppercase;
+                margin: 10px;
+            }
+            main nav ul  {
+                display: block;
+                text-align: right;
+                margin-right: 5px;
+            }
+            main nav ul input {
+                margin-right: 0px;
+                margin-left: 20px;
+                width: 60%;
+            }
+            main nav ul ol {
+                position: absolute;
+                right: 65%;
+            }
+            main nav ul ol section{
+                position: relative;
+            }
+            main nav ul ol section {
+                background-color: white;
+            }
+            main nav ul ol section {
+                display: block;
+                text-align: center;   
+            }
+            main nav ul ol section div {
+                margin:0px;
+                padding:0 20px 20px 20px; 
+            }
+
+            main nav ul ol .pic {
+                background-color: black;
+                margin: 10px; 
+                padding: 30px 0;
+                text-align: center;
+                text-transform: uppercase;
+                position: relative; 
+            }
+
+
+            main .b-collection {  
+                color: black;
+                text-align: center;
+                position: relative;
+                top: 50%;                
+                }
+
+                main .b-collection .button{
+                    padding: 10px 10%;
+                    user-select: none;
+                    background-color: transparent;
+                    border: 2px solid #737373;
+                }
+
+                
+
+                main .b-collection .button span {
+                    text-transform: uppercase;
+                    color: black;
+                }
+
+                main .b-collection .button input {
+                    display: none;
+                }
+
+                main .title h1.ave{
+                    font-size: 120px;
+                }
+
+
+
+
+                aside {
+                    margin: 30px 10px;
+                    border-top: 1px solid gray;
+                    border-bottom: 1px solid gray;      
+                }
+
+                aside nav div{
+                    display: block;
+                    text-align: center;
+                    padding-top: 30px;
+                }
+
+            aside nav p{
+                    color:gray;
+                    text-transform: uppercase;
+                    margin: 5px;
+                }
+
+                aside nav a {
+                    padding: 0;
+                }
+
+                aside nav a:hover {
+                    color: #00c8c8;  
+                }
+
+                aside .mod .lefts .left-top .one{
+                    margin-bottom: 20px;
+                }
+
+                aside .mod .rights .four{
+                    margin-bottom: 20px ;
+                }
+
+                aside .mod .rights .right-bottom .five{
+                    margin-bottom: 20px;
+                    margin-top: 0px;
+                }
+
+                aside .mod .one,
+                aside .mod .two,
+                aside .mod .three,
+                aside .mod .four,
+                aside .mod .five,
+                aside .mod .six {
+                    background-position: top;
+                    height: 450px;
+                    padding: 0;
+                    background-size: 100%;
+                }
+
+
+                aside .mod figcaption{
+                    opacity:0;
+                    position: relative;
+                    top: 365px;
+                    border: 1px solid gray;
+                    margin: 0px -1px;
+                    background-color: white;
+                }
+
+
+                section.lookbooks .looks {
+                    display: block;
+                    width: 100%;
+                }
+
+                section.lookbooks .looks .div{
+                    height: 400px;
+
+                }
+    
+                section.lookbooks .looks .text{
+                    width: 70%;
+                    padding-right: 0;
+                    text-align: end; 
+                }
+                
+                
+                section.lookbooks .looks .div {
+                    width:90%; 
+                    margin: 0 5%;
+                    margin-bottom: 10px;
+                    text-align: end;        
+                }
+
+
+
+            footer .top {
+                padding-left: 25px;
+            }
+}
