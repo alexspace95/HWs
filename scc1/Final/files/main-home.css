@@ -142,8 +142,6 @@ aside .mod .one:hover,
 
 aside .mod figcaption {
     opacity: 0;
-    position: relative;
-    top: 475px;
     border: 1px solid #737373;
     margin: 0px -1px;
     background-color: white;
@@ -173,6 +171,20 @@ aside .mod .one:hover figcaption,
     opacity: 1;
     text-align: center;
     box-shadow: 0px 5px 10px #737373;
+    border-top: 0;
+}
+
+@media screen and (min-width:500px) {
+    aside .mod .one:hover figcaption,
+    .two:hover figcaption,
+    .three:hover figcaption,
+    .four:hover figcaption,
+    .five:hover figcaption,
+    .six:hover figcaption {
+        position: relative;
+        top: 475px;
+        z-index: 1;
+    }
 }
 
 aside .mod figcaption h5 {
@@ -231,7 +243,7 @@ aside .mod figcaption .boxes .box-sizes {
     background-size: 70%;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:800px) {
     aside .mod .lefts,
     aside .mod .rights {
         width: 49%;
@@ -259,14 +271,6 @@ aside .mod .lefts .left-top .one,
     margin-bottom: 10px;
 }
 
-aside .mod .lefts .three {
-    margin: 20px 0;
-}
-
-aside .mod .rights .four {
-    margin-bottom: 40px;
-}
-
 @media screen and (min-width:500px) {
     aside .mod .rights .right-bottom {
         display: flex;
@@ -279,58 +283,49 @@ aside .mod .rights .four {
     }
 }
 
-aside .mod .one {
-    background-image: url(./images/1.home/photoa1.png);
+aside .mod .one,
+aside .mod .two,
+aside .mod .three,
+aside .mod .four,
+aside .mod .five,
+aside .mod .six {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+aside .mod .one {
+    background-image: url(./images/1.home/photoa1.png);
     height: 500px;
 }
 
 aside .mod .two {
     background-image: url(./images/1.home/photoa2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f8f8f8;
     height: 500px;
 }
 
 aside .mod .three {
     background-image: url(./images/1.home/photoa3.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f8f8f8;
     height: 700px;
+    margin: 20px 0;
 }
 
 aside .mod .four {
     background-image: url(./images/1.home/photoa4.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f8f8f8;
     height: 700px;
+    margin-bottom: 40px;
 }
 
 aside .mod .five {
     background-image: url(./images/1.home/photoa5.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 500px;
-    background-color: #f8f8f8;
 }
 
 aside .mod .six {
     background-image: url(./images/1.home/photoa6.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 500px;
-    background-color: #f8f8f8;
 }
 
 .lookbooks {
@@ -440,10 +435,6 @@ aside .mod .six {
 @media screen and (max-width:800px) {
     main nav input {
         margin: 10px;
-    }
-    aside .mod .lefts,
-    .rights {
-        width: 100%;
     }
     aside .mod .lefts .left-top .one {
         margin-bottom: 20px;
