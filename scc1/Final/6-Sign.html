@@ -6,7 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main-sign.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='files/main-sign.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='files/main-common.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='files/main-title.css'>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <header>
         <nav class="account">
             <div class="currency">
-                Currency :
+                <span>Currency :</span>
                 <select class="cur">
                     <option> GBP </option>
                     <option> EUR </option>
@@ -102,22 +104,20 @@
                 </ul>
             </nav>
         </div>
-
-
     </main>
 
 
-    <main class="title">
+    <section class="title">
         <h1 class="ave"> A V E</h1>
         <span class="dark"> </span>
         <h2> Welcome <span> to Ave </span> </h2>
         <h3> Sign in or register </h3>
-    </main>
+    </section>
 
 
 
     <section class="form">
-        <section class="f">
+        <section class="form-flex">
             <form class="sign-in">
                 <h4>Sign in</h4>
                 <div class="inputs">
@@ -127,7 +127,7 @@
                 <div class="bottom">
                     <label>
                         <input type="submit" class="sub l">
-                        <p class="button"> Sign in </p>
+                        <p class="p-button"> Sign in </p>
                     </label>
                     <a href="#" class="blue"> Forgot your Password 🠖</a>
                 </div>
@@ -140,14 +140,13 @@
                     <input type="password" class="pass re conf" placeholder="Confirm password.." />
                     <div class="chb">
                         <label>
-                            <label>
-                                <input type="checkbox" class="checkbox re">
-                                <span class="checkbox"></span>
-                            </label>
-                            <span class="ch-text">
+                            <input type="checkbox" class="checkbox re"/>
+                            <span class="span-checkbox"></span>
+                        </label>
+                        <span class="ch-text">
                                 Sign up for exclusive updates, discounts, new arrivals, contests, and more!
                             </span>
-                        </label>
+
                     </div>
                 </div>
                 <div class="buttons-reg">
@@ -157,8 +156,7 @@
                     </label>
 
                     <p class="pr">
-                        By clicking ‘Create Account’, you
-                        agree to our
+                        By clicking ‘Create Account’, you agree to our
                         <a href="#" class="blue">
                             Privacy Policy 🠖
                         </a>
@@ -218,8 +216,7 @@
             </div>
             <div class="contact">
                 <h6> contact details </h6>
-                <p> Head Office: Avenue Fashion
-                    180-182 Regent Street. London.
+                <p> Head Office: Avenue Fashion 180-182 Regent Street. London.
                 </p>
                 <p> Telephone: 0123-456-789 </p>
                 <p> Email: support @yourwebsite. com </p>
