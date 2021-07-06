@@ -15,16 +15,28 @@ body header .top  {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 25px 20px;
+    padding: 15px 10px;
     background-color: #660000;
     color: #fcfcfc; 
 }
 
+@media screen and (min-width:500px) {
+    body header .top  {
+        padding: 25px 20px;
+    }
+}
+
 body header .top .emb h2 a {
-    font-size: 32px;
+    font-size: 16px;
     text-decoration: none;
     color: #fcfcfc;
     font-weight: normal;
+}
+
+@media screen and (min-width:500px) {
+    body header .top .emb h2 a {
+        font-size: 32px;
+    }
 }
 
 body header .top .emb p {
@@ -107,17 +119,24 @@ body header .topnav {
 }
 
 body header .topnav button {
-    font-size: 13px;
+    font-size: 10px;
     margin: 5px;
     border: 0;
     text-transform: uppercase;
-    padding: 10px;
     outline: none;
     background-color: #fcfcfc;
     cursor: pointer;
     color: #660000;
-    padding: 15px 10px; 
+    padding: 5px; 
     font-weight: bold;
+}
+
+@media screen and (min-width:500px) {
+    body header .topnav button {
+        font-size: 13px;
+        margin: 5px;
+        padding: 15px 10px; 
+    }
 }
 
 body header .topnav button:active {
@@ -129,27 +148,34 @@ body header .topnav button.nl{
 }
 
 
-
-main {
-    padding: 25px 20px;  
+@media screen and (min-width:500px) {
+    main {
+        padding: 25px 20px;  
+    }
 }
+
 
 main .bord {
     margin-top: 20px;           
     border-bottom: 3px solid #b7b7b7;
 }
 
-main .featuring{
-    display: flex;
-    justify-content: space-between;
+
+@media screen and (min-width:500px) {
+    main .featuring{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .featuring .slider {
+        width: 67%; 
+    }
 }
 
 main .featuring .slider {
     background-color: #e7e7e7;
     padding: 15px;
     max-height: 400px;
-    width: 67%;
-    
 }
 
 main .featuring .slider .picture{
@@ -159,23 +185,39 @@ main .featuring .slider .picture{
     height: 300px;
     background-position: top;   
     background-repeat: no-repeat;
-    background-image: url(./1.png); 
+    background-image: url(./pic/1.png); 
+    }
+ 
+    @media screen and (min-width:1020px) {
+        main .featuring .slider .picture .first {
+            padding: 5px 10px;
+            background-image: url(./pic/Transparent\ background.png);
+            background-repeat: no-repeat;
+            height: 90px;
+            min-width: 600px;
+            
+        }
+    }
+    main .featuring .slider .picture .first {
+        padding: 0px 5px;
+        background-image: url(./pic/Transparent\ background.png);
+        background-repeat: no-repeat;
+        height: 90px;
+        position: relative;
+        bottom: -200px;
     }
 
-main .featuring .slider .picture .first {
-    padding: 5px 10px;
-    background-image: url(./Transparent\ background.png);
-    background-repeat: no-repeat;
-    height: 90px;
-    min-width: 600px;
-    position: relative;
-    bottom: -200px;
-}
+    @media screen and (min-width:1020px) {
+        main .featuring .slider .picture .slider-footer {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+    }
 
 main .featuring .slider .picture .slider-footer {
-    font-size: 20px;
+    font-size: 16px;
     color: #fcfcfc;
-    margin-bottom: 8px;
+    margin: 3px 0px;
 }
 
 main .featuring .slider .picture .double {
@@ -215,27 +257,27 @@ main .slides label span {
 
 main .slides label  span.first {
     background-repeat: no-repeat;
-    background-image: url(./5.png);
+    background-image: url(./pic/5.png);
 }
 
 main .slides label  span.second {
     background-repeat: no-repeat;
-    background-image: url(./6.png);
+    background-image: url(./pic/6.png);
 }
 
 main .slides label  span.third {
     background-repeat: no-repeat;
-    background-image: url(./7.png);
+    background-image: url(./pic/7.png);
 }
 
 main .slides label  span.fourth {
     background-repeat: no-repeat;
-    background-image: url(./8.png);
+    background-image: url(./pic/8.png);
 }
 
-main .slides label  span.fivth {
+main .slides label  span.fifth {
     background-repeat: no-repeat;
-    background-image: url(./9.png);
+    background-image: url(./pic/9.png);
 }
 
 main .slides label input:checked + span {
@@ -252,50 +294,64 @@ main .slides button{
     cursor: pointer;
 }
 
+
 main .slides .left {  
-background-image: url(./Left\ Arrow.png);
-margin-right: 5%;
+background-image: url(./pic/Left\ Arrow.png);
+margin-right: 1%;
+}
+
+@media screen and (min-width:1020px) {
+    main .slides .left { 
+        margin-right: 5%;
+    }
 }
 
 main .slides .right {
     margin-left: 5%;
-    background-image: url(./Right\ Arrow.png);
+    background-image: url(./pic/Right\ Arrow.png);
 }
 
-main .featuring .rights {
-    width: 32%;
-    padding: 0 15px;
-    
+@media screen and (min-width:500px) {
+    main .featuring .rights {
+        width: 32%;
+        padding: 0 15px; 
+    }
 }
+
+@media screen and (max-width:500px) {
+    main .featuring .rights {
+        padding-top:15px; 
+    }
+}
+
 
 main .featuring .rights .r-one, .r-two,.r-three{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
 }
 
 main .featuring .rights .r-one .picture {
     height: 120px;
     width: 140px;
-    background-image: url(./2.png);
+    background-image: url(./pic/2.png);
 }
 
 main .featuring .rights .r-two .picture {
     height: 120px;
     width: 140px;
-    background-image: url(./3.png);
+    background-image: url(./pic/3.png);
 }
 
 main .featuring .rights .r-three .picture {
     height: 120px;
     width: 140px;
-    background-image: url(./4.png);
+    background-image: url(./pic/4.png);
 }
 
 main .featuring .rights h3 {
-    width: 55%;
+    width: 60%;
     height: 120px;
     font-weight: lighter;
     background-color: #660000;
@@ -303,12 +359,18 @@ main .featuring .rights h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
     padding: 0 10px;
     color: #fcfcfc;
 }
 
+@media screen and (min-width:1020px) {
+    main .featuring .rights h3 {
+        font-size: 16px;
+        width: 220px;
+    } 
+}
 
 
 
@@ -316,32 +378,51 @@ ul {
     list-style-type: none;
 }
 
+@media screen and (min-width:500px) {
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
 .main-content {
     margin: 0 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 20px 0;
     margin-bottom: 2px;
 }
 
-.main-content .aside-content {
-    width: 69%;
+@media screen and (min-width:500px) {
+    .main-content .aside-content {
+        width: 69%;
+    }
 }
 
+@media screen and (min-width:1020px) {
+    .main-content .aside-content .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 .main-content .aside-content .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #d8d8d8;
 }
 
+@media screen and (min-width:1020px) {
+    .main-content .aside-content .top div{    
+        padding: 10px ;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:1020px) {
 .main-content .aside-content .top div{    
-    padding: 10px ;
-    width: 32%;
+    padding: 10px 10% ;
     border: 1px solid #d8d8d8;
+}
 }
 
 .main-content .aside-content .top div ul {
@@ -362,7 +443,7 @@ ul {
 
 .main-content .aside-content .top .one figure {
     margin: 15px 0;
-    background-image: url(./10.png);
+    background-image: url(./pic/10.png);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 180px;
@@ -371,7 +452,7 @@ ul {
 
 .main-content .aside-content .top .two figure  {
     margin: 15px 0;
-    background-image: url(./11.png);
+    background-image: url(./pic/11.png);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 180px;
@@ -380,7 +461,7 @@ ul {
 
 .main-content .aside-content .top .three figure  {
     margin: 15px 0;
-    background-image: url(./12.png);
+    background-image: url(./pic/12.png);
     background-position: center;
     background-repeat: no-repeat;
     min-width: 180px;
@@ -411,7 +492,6 @@ color: #979797;
     padding-bottom: 10px;
     margin-bottom: 15px;
     text-transform: capitalize;
-    
 }
 
 .main-content .aside-content .low .latest-news div {
@@ -467,11 +547,11 @@ color: #ff4646;
 }
 
 
-
-
-.main-content .right-column {
-    width: 27%;
-    font-size: 13px;
+@media screen and (min-width:500px) {
+    .main-content .right-column {
+        width: 27%;
+        font-size: 13px;
+    }
 }
 
 .main-content .right-column .names {
@@ -506,7 +586,7 @@ color: #ff4646;
     min-height: 80px;
     min-width: 80px;
     background-repeat: no-repeat;
-    background-image: url(./13.png);
+    background-image: url(./pic/13.png);
     margin: 5px;
 }
 
@@ -532,7 +612,7 @@ color: #ff4646;
     min-height: 80px;
     min-width: 80px;
     background-repeat: no-repeat;
-    background-image: url(./14.png);
+    background-image: url(./pic/14.png);
     margin: 5px;
 }
 
@@ -614,7 +694,7 @@ opacity: 0.8;
     justify-content: center;
     align-content: center;
     background-repeat: no-repeat;
-    background-image: url(./Left\ Arrow2.png);
+    background-image: url(./pic/Left\ Arrow2.png);
 }
 
 .calendar .top-calend .right-button{
@@ -627,7 +707,7 @@ opacity: 0.8;
     justify-content: center;
     align-content: center;
     background-repeat: no-repeat;
-    background-image: url(./Right\ Arrow2.png);
+    background-image: url(./pic/Right\ Arrow2.png);
 }
 
 .calendar .top-calend .month-year{
@@ -743,35 +823,73 @@ footer .main .footers{
     justify-content: space-between;
 }
 
+@media screen and (min-width:1020px) {
+    footer .main .buttons .first-line  {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;   
+        padding: 20px 0;
+    }
+}
+
 footer .main .buttons .first-line  {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;   
-    padding: 20px 0;
     width: 100%;
     min-width: 250px;
 }
 
-footer .main .buttons .second-line  {
-    padding: 20px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;   
-    width: 100%;
-    
+@media screen and (max-width:500px) {
+    footer .main .buttons .first-line  {    
+        padding-left: 25px;
+    }
 }
 
+@media screen and (min-width:1020px) {
+    footer .main .buttons .second-line  {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;  
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer .main .buttons .second-line  {    
+        padding-left: 25px;
+    }
+}
+
+footer .main .buttons .second-line  {    
+    width: 100%;
+}
+
+@media screen and (min-width:1020px) {
+    footer .main .buttons label  {
+        margin-left:50px ;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    footer .main .buttons label  {
+        margin-right:50px ;
+        margin-bottom: 20px;
+    }
+}
 
 footer .main .buttons label  {
     background-color: #500000;
     width: 300px;
     height: 80px;
     user-select: none;
-    margin: 0 0 0 50px ;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    footer .main .buttons label  {
+        width: 150px;
+    }
 }
 
 footer .main .buttons label:active  {
