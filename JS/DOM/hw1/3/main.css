@@ -1,0 +1,38 @@
+#elem {
+    align-items: center;
+    text-align: center;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    border: 1px black solid;
+    background-size: 100px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Chi {
+    background-image: url(./Img/China.png);
+}
+
+.Ind {
+    background-image: url(./Img/India.png);
+}
+
+.USA {
+    background-image: url(./Img/USA.png);
+}
+
+.Rus {
+    background-image: url(./Img/Russia.png);
+}
+
+.UK {
+    background-image: url(./Img/UK.png);
+}

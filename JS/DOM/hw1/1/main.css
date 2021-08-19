@@ -1,0 +1,24 @@
+section {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+div {
+    border: 1px black solid;
+    text-align: center;
+    background-color: yellow;
+}
+
+.ten {
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
