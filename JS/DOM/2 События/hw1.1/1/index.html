@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Шифратор</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body class="body">
+    <section class="section-scrypt">
+        <div id="crypt" class="div div-crypt">
+            <p class="text">Здесь находится поле для шифрования</br>
+                Вводите в это поле текст только </br>
+                маленькими буквами (abc)</p>
+            <input type="text" id="crypt-field" class="text-input" />
+            <button id="crypt-button" class="button crypt-button"> Зашифровать </button>
+            <p id="crypted-text" class="text new-text"></p>
+        </div>
+        <div id="decrypt" class="div div-decrypt">
+            <p class="text">Здесь находится поле для расшифрования</br>
+                Вводите в это поле текст только </br>
+                маленькими буквами (абв)</p>
+            <input type="text" id="decrypt-field" class="text-input" />
+            <button id="decrypt-button" class="button decrypt-button"> Расшифровать </button>
+            <p id="decrypted-text" class="text new-text"></p>
+        </div>
+    </section>
+    <script src='main.js'></script>
+</body>
+
+</html>

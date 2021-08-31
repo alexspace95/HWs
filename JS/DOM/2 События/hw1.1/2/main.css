@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    background-color: rgb(150, 200, 50);
+}
+
+.section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-text {
+    outline: transparent;
+}
+
+.select,
+.result-button {
+    outline: transparent;
+    user-select: none;
+}
+
+.result-button {
+    color: rgb(35, 0, 35);
+    border: 3px rgb(150, 220, 150) solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 42.5%;
+    min-width: 15%;
+    padding: 10px 0;
+    background-color: rgb(220, 255, 220);
+}
+
+.result-button:active {
+    border-color: transparent;
+}
+
+.result-field {
+    font-size: 20px;
+    border: 2px #999999 solid;
+    text-align: center;
+    margin: 10px 25%;
+    padding: 50px 0;
+    background-color: rgb(240, 255, 240);
+}
