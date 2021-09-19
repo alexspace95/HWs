@@ -130,6 +130,7 @@ displayButton.addEventListener('click', function() {
     getForm.appendChild(addButton);
 
     addButton.addEventListener('click', function() {
+
         const getNewName = document.getElementById('add-name');
         const getNewPosition = document.getElementById('add-position');
         const getNewStartdate = document.getElementById('add-startdate');

@@ -9,11 +9,8 @@ let a = 0;
 let b = 1;
 let c = a + b;
 for (let i = 1; i <= k; i++) {
-    let c = a + b;
+    c = a + b;
     a = b;
     b = c;
-    if (i < k) {
-        continue;
-    }
-    document.write(c - a);
 }
+document.write(c - a);

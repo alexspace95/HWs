@@ -8,10 +8,10 @@ HWs
 
 
 const A = Number(prompt('Введите число байт : '));
-let GB = (Math.floor(A / 1024 ** 3));
-let OGB = (A - (1024 ** 3) * GB);
-let MB = (Math.floor(OGB / (1024 ** 2)));
-let OMB = (OGB - (MB * (1024 ** 2)));
-let KB = (Math.floor(OMB / 1024));
-let B = (OMB - (KB * 1024));
+const GB = (Math.floor(A / 1024 ** 3));
+const OGB = (A - (1024 ** 3) * GB);
+const MB = (Math.floor(OGB / (1024 ** 2)));
+const OMB = (OGB - (MB * (1024 ** 2)));
+const KB = (Math.floor(OMB / 1024));
+const B = (OMB - (KB * 1024));
 console.log(GB + 'Гб ' + MB + 'Мб ' + KB + 'кб ' + B + 'б ');

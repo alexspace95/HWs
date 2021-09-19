@@ -10,31 +10,33 @@
 вывести средний возраст людей и имя человека с самой большой зарплатой в списке.
 */
 
-const names = ['Alex', 'Den', 'Max', 'Oleg', 'Shon', 'Sir', 'Doc', 'Enri', 'Big', 'Tank'];
-const N = prompt('Enter N');
-const Arr0 = [];
+const names = ['Alex', 'Den', 'Max', 'Olbeg', 'Shon', 'Sir', 'Doc', 'Henri', 'Pig', 'Tank'];
+const N = Number(prompt('Enter N'));
+const listArray = [];
 let date = 0;
 for (let i = 0; i < N; i++) {
+
+    const birthDay = new Date((1980 + (Math.floor(Math.random() * 16))),
+        (0 + (Math.round(Math.random() * 12))),
+        (1 + (Math.round(Math.random() * 31))));
+
     const pers = {
-        DoB: d = new Date((1980 + (Math.floor(Math.random() * 16))),
-            (0 + (Math.round(Math.random() * 12))),
-            (1 + (Math.round(Math.random() * 31)))),
+        DoB: birthDay,
         name: names[Math.floor((Math.random()) * 10)],
         salary: (Math.round(Math.random() * 500))
     }
-    Arr0.push(pers);
-    const d2 = new Date(Arr0[i].DoB);
-    const d0 = new Date();
-    date = date + (Math.floor((d0 - d2) / (3600000 * 24 * 365)));
+    listArray.push(pers);
+
+    const d2 = (new Date).getFullYear() - (listArray[i].DoB).getFullYear();
+    date = date + d2;
 }
-let maxsalary = 0;
-let maxname = 0;
+
+let max = listArray[0];
 for (i = 0; i < N; i++) {
-    if (maxsalary < Arr0[i].salary) {
-        maxsalary = (Arr0[i].salary);
-        maxname = (Arr0[i].name);
+    if (max.salary < listArray[i].salary) {
+        max = (listArray[i]);
     }
 }
-console.log(Arr0);
+console.log(listArray);
 console.log('Средний возраст : ' + (date / N));
-console.log('max salary = ' + maxsalary + '$' + ' have ' + maxname);
+console.log('max salary = ' + max.salary + '$' + ' have ' + max.name);

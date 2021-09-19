@@ -3,7 +3,7 @@
 верно ли расставлены скобки в этой строке.
 */
 
-let str = prompt('Enter text');
+const str = prompt('Enter text');
 let count = 0;
 for (let i = 0; i < str.length; i++) {
     switch (str[i]) {
@@ -14,24 +14,12 @@ for (let i = 0; i < str.length; i++) {
             count--;
             break;
     }
+
 }
-let res = 0;
-if (count == 0) {
-    document.write('Количество скобок верно ');
-    res = res + 2;
+if (count < 0) {
+    alert('illegal!')
+    break;
 }
-if ((str.indexOf('(')) > (str.indexOf(')'))) {
-    res = res + 1;
-}
-if (count !== 0) {
-    document.write('Количество скобок неверно');
-}
-if ((str.indexOf('(')) < (str.indexOf(')'))) {
-    res = res + 2;
-}
-if (res == 4) {
-    document.write('<br/>' + 'Скобки установлены верно!!!')
-}
-if (res != 4) {
-    document.write('<br/>' + 'Скобки установлены неверно!!!')
+if (count === 0) {
+    alert('OK!')
 }

@@ -15,8 +15,6 @@ const str = (String(prompt('Enter your text')));
 document.write(str[0]);
 for (i = 0; i < str.length; i++) {
     if (str[i] === ' ') {
-        i++
-        document.write(str[i])
-        continue;
+        document.write(str[i + 1]);
     }
 }
